@@ -7,7 +7,6 @@ public static class AnimationGenerationUtil
     public static AnimationCurve[] RotationAnimationCurves(Dictionary<float, Quaternion> keys)
     {
         AnimationCurve[] output = new AnimationCurve[4];
-        int size = keys.Count;
         List<Keyframe>[] keyframes = new List<Keyframe>[4];
         for (int i = 0; i < keyframes.Length; i++)
         {
